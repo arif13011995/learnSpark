@@ -212,7 +212,7 @@ object HelloWorld extends App{
   //5. Pattern matching and using if expressions in the case clause
   println("\nStep 5; Pattern matching and using if expressions in the case clause")
   var tasteLevel4 = donutType match {
-    //case donut if(donut.contains("Glazed") || donut.contains("Strawberry")) => "Very Tasty"
+    case donut if(donut.contains("Glazed") || donut.contains("Strawberry")) => "Very Tasty"
     case "Plain Donut" => "Tasty"
     case _ => "Tasty"
   }

@@ -165,4 +165,132 @@ object Class extends App{
   val chocolateVanillaDonut: Donut4 = vanillaDonut4.copy(name = "Chocolate And Vanilla Donut", price = 5.0)
   println(s"Chocolate And Vanilla Donut = $chocolateVanillaDonut")
 
+
+  //Scala Tutorial - Learn How To Use Type Alias: Type Aliasing Versus Case Class
+  //1.How to use type alias to name a Tuple2 pair into a domain type called CartItem
+  println("\nStep 3: How to use type alias to name a Tuple2 pair into a domain type called CartItem")
+  type CartItem[Donut, Int] = Tuple2[Donut, Int]
+
+  //2. How to create instances of the aliased typed CartItem
+  println("\nStep 4: How to create instances of the aliased typed CartItem")
+  val cartItem = new CartItem(vanillaDonut4, 4)
+  println(s"cartItem = $cartItem")
+  println(s"cartItem first value = $cartItem._1")
+  println(s"cartItem second value = $cartItem._2")
+
+  //3.How to use an aliased typed into a function parameter
+  println("\nStep 5: How to use an aliased typed into a function parameter")
+  def calculateTotal(shoppingCartItems: Seq[CartItem[Donut4, Int]]): Double = {
+    // calculate the total cost
+    shoppingCartItems.foreach { cartItem =>
+      println(s"CartItem donut = ${cartItem._1}, quantity = ${cartItem._2}")
+    }
+    10 // some random total cost
+  }
+
+  //4.How to use a case class instead of an aliased typed
+  println("\nStep 6: How to use a case class instead of an aliased typed")
+  case class ShoppingCartItem(donut: Donut4, quantity: Int)
+
+  val shoppingItem: ShoppingCartItem = ShoppingCartItem(Donut4("Glazed Donut", 2.50), 10)
+  println(s"shoppingItem donut = ${shoppingItem.donut}")
+  println(s"shoppingItem quantity = ${shoppingItem.quantity}")
+
+  //5.How to use case class from Step 6 to represent a Sequence of Donut items in a shopping cart
+  println("\nStep 7: How to use case class from Step 6 to represent a Sequence of Donut items in a shopping cart")
+  def calculateTotal2(shoppingCartItems: Seq[ShoppingCartItem]): Double = {
+    // calculate the total cost
+    shoppingCartItems.foreach { shoppingCartItem =>
+      println(s"ShoppingCartItem donut = ${shoppingCartItem.donut}, quantity = ${shoppingCartItem.quantity}")
+    }
+    10 // some random total cost
+  }
+
+  //Scala Tutorial - Learn How To Use Implicit Class - Extension Methods
+
+
+
+
+  //Scala Tutorial - Learn How To Use Package Object
+
+
+
+
+  //Scala Tutorial - Learn How To Extend Class - Class Inheritance
+  //1. How to define an abstract class called Donut
+  println("Step 1: How to define an abstract class called Donut")
+  abstract class Donut5(name: String){
+
+    def printName: Unit
+
+  }
+
+  //2. How to extend abstract class Donut and define a sub-class of Donut called VanillaDonut
+  println("\nStep 2: How to extend abstract class Donut and define a sub-class of Donut called VanillaDonut")
+  class VanillaDonut5(name: String) extends Donut5(name){
+
+    override def printName: Unit = println(name)
+  }
+  
+  object VanillaDonut5{
+    def apply(name: String): Donut5 = new VanillaDonut5(name)
+  }
+
+  //3. How to extend abstract class Donut and define another sub-class of Donut called GlazedDonut
+  println("\nStep 3: How to extend abstract class Donut and define another sub-class of Donut called GlazedDonut")
+  class GlazedDonut5(name: String) extends Donut5(name) {
+
+    override def printName: Unit = println(name)
+
+  }
+
+  object GlazedDonut5 {
+
+    def apply(name: String): Donut5 = {
+      new GlazedDonut5(name)
+    }
+
+  }
+
+  //4. How to instantiate Donut objects
+  println("\nStep 4: How to instantiate Donut objects")
+  val vanillaDonut5: Donut5 = VanillaDonut5("Vanilla Donut")
+  vanillaDonut5.printName
+
+  val glazedDonut5: Donut5 = GlazedDonut5("Glazed Donut")
+  glazedDonut5.printName
+
+  //Scala Tutorial - Learn How To Extend Case Class - Case Class Inheritance
+  println("\nStep 2: How to extend abstract class Donut and define a case class called VanillaDonut")
+  case class VanillaDonut6(name: String) extends Donut5(name) {
+
+    override def printName: Unit = println(name)
+
+  }
+
+  println("\nStep 3: How to extend abstract class Donut and define another case class called GlazedDonut")
+  case class GlazedDonut6(name: String) extends Donut5(name) {
+
+    override def printName: Unit = println(name)
+
+  }
+
+  println("\nStep 4: How to instantiate Donut objects")
+  val vanillaDonut6: Donut5 = VanillaDonut6("Vanilla Donut")
+  vanillaDonut6.printName
+
+  val glazedDonut6: Donut5 = GlazedDonut6("Glazed Donut")
+  glazedDonut6.printName
+
+
+  //Scala Tutorial - Learn How To Create Typed Class
+
+
+  //Scala Tutorial - Learn How To Create Covariance Type Class
+
+
+  //Scala Tutorial - Learn How To Create Contra-Variance Type Class
+
+
+
 }
