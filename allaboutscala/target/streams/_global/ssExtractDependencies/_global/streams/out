@@ -1,40 +1,137 @@
-[error] sbt.librarymanagement.ResolveException: Error downloading com.typesafe.scala-logging:scala-logging_2.13:3.4.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\xsiarief1864\.ivy2\local\com.typesafe.scala-logging\scala-logging_2.13\3.4.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.4.0/scala-logging_2.13-3.4.0.pom
-[error] 	at lmcoursier.CoursierDependencyResolution.unresolvedWarningOrThrow(CoursierDependencyResolution.scala:245)
-[error] 	at lmcoursier.CoursierDependencyResolution.$anonfun$update$34(CoursierDependencyResolution.scala:214)
-[error] 	at scala.util.Either$LeftProjection.map(Either.scala:573)
-[error] 	at lmcoursier.CoursierDependencyResolution.update(CoursierDependencyResolution.scala:214)
-[error] 	at sbt.librarymanagement.DependencyResolution.update(DependencyResolution.scala:60)
-[error] 	at sbt.internal.LibraryManagement$.resolve$1(LibraryManagement.scala:52)
-[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$12(LibraryManagement.scala:102)
-[error] 	at sbt.util.Tracked$.$anonfun$lastOutput$1(Tracked.scala:69)
-[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$20(LibraryManagement.scala:115)
-[error] 	at scala.util.control.Exception$Catch.apply(Exception.scala:228)
-[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11(LibraryManagement.scala:115)
-[error] 	at sbt.internal.LibraryManagement$.$anonfun$cachedUpdate$11$adapted(LibraryManagement.scala:96)
-[error] 	at sbt.util.Tracked$.$anonfun$inputChanged$1(Tracked.scala:150)
-[error] 	at sbt.internal.LibraryManagement$.cachedUpdate(LibraryManagement.scala:129)
-[error] 	at sbt.Classpaths$.$anonfun$updateTask0$5(Defaults.scala:2946)
-[error] 	at scala.Function1.$anonfun$compose$1(Function1.scala:49)
-[error] 	at sbt.internal.util.$tilde$greater.$anonfun$$u2219$1(TypeFunctions.scala:62)
-[error] 	at sbt.std.Transform$$anon$4.work(Transform.scala:67)
-[error] 	at sbt.Execute.$anonfun$submit$2(Execute.scala:281)
-[error] 	at sbt.internal.util.ErrorHandling$.wideConvert(ErrorHandling.scala:19)
-[error] 	at sbt.Execute.work(Execute.scala:290)
-[error] 	at sbt.Execute.$anonfun$submit$1(Execute.scala:281)
-[error] 	at sbt.ConcurrentRestrictions$$anon$4.$anonfun$submitValid$1(ConcurrentRestrictions.scala:178)
-[error] 	at sbt.CompletionService$$anon$2.call(CompletionService.scala:37)
-[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
-[error] 	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
-[error] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+[error] lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/com/crealytics/spark-excel_2.11/0.8.2/spark-excel_2.11-0.8.2.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/crealytics/spark-excel_2.11/0.8.2/spark-excel_2.11-0.8.2.jar
+[error] https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.4.4/spark-catalyst_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.4.4/spark-catalyst_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.5.3/json4s-scalap_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.5.3/json4s-scalap_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.4.4/spark-unsafe_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.4.4/spark-unsafe_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.4.4/spark-launcher_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.4.4/spark-launcher_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.4.4/spark-sketch_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.4.4/spark-sketch_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.4.4/spark-kvstore_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.4.4/spark-kvstore_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar
+[error] https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.5.3/json4s-ast_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.5.3/json4s-ast_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.4.4/spark-tags_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.4.4/spark-tags_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.5.3/json4s-core_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.5.3/json4s-core_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.9.3/chill_2.11-0.9.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.9.3/chill_2.11-0.9.3.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.5.3/json4s-jackson_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.5.3/json4s-jackson_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.11/3.9.2/scala-logging_2.11-3.9.2.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.11/3.9.2/scala-logging_2.11-3.9.2.jar
+[error] https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.4/spark-core_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.4/spark-core_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.4.4/spark-network-shuffle_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.4.4/spark-network-shuffle_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.6/scala-xml_2.11-1.0.6.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.6/scala-xml_2.11-1.0.6.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.4.4/spark-network-common_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.4.4/spark-network-common_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/poi/poi/3.14/poi-3.14.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.14/poi-3.14.jar
+[error] https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1.jar
+[error] https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[error] https://repo1.maven.org/maven2/jline/jline/2.12.1/jline-2.12.1.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/jline/jline/2.12.1/jline-2.12.1.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.jar
+[error] 
+[error] 	at lmcoursier.internal.shaded.coursier.Artifacts$.$anonfun$fetchArtifacts$8(Artifacts.scala:359)
+[error] 	at lmcoursier.internal.shaded.coursier.util.Task$.$anonfun$flatMap$2(Task.scala:14)
+[error] 	at scala.concurrent.Future.$anonfun$flatMap$1(Future.scala:307)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transformWith$1(Promise.scala:41)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
 [error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 [error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 [error] 	at java.lang.Thread.run(Thread.java:745)
-[error] (ssExtractDependencies) sbt.librarymanagement.ResolveException: Error downloading com.typesafe.scala-logging:scala-logging_2.13:3.4.0
-[error]   Not found
-[error]   Not found
-[error]   not found: C:\Users\xsiarief1864\.ivy2\local\com.typesafe.scala-logging\scala-logging_2.13\3.4.0\ivys\ivy.xml
-[error]   not found: https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.13/3.4.0/scala-logging_2.13-3.4.0.pom
+[error] Caused by: lmcoursier.internal.shaded.coursier.cache.ArtifactError$DownloadError: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/crealytics/spark-excel_2.11/0.8.2/spark-excel_2.11-0.8.2.jar
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.helper$2(FileCache.scala:1083)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.coursier$cache$FileCache$$downloading(FileCache.scala:1095)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.doDownload$1(FileCache.scala:365)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$54(FileCache.scala:552)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.loop$1(CacheLocks.scala:53)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.withLockOr(CacheLocks.scala:76)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$32(FileCache.scala:553)
+[error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[error] 	at scala.util.Success.map(Try.scala:213)
+[error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+[error] 	at java.lang.Thread.run(Thread.java:745)
+[error] Caused by: java.net.UnknownHostException: repo1.maven.org
+[error] 	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+[error] 	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+[error] 	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+[error] 	at java.net.Socket.connect(Socket.java:589)
+[error] 	at sun.security.ssl.SSLSocketImpl.connect(SSLSocketImpl.java:668)
+[error] 	at sun.security.ssl.BaseSSLSocketImpl.connect(BaseSSLSocketImpl.java:173)
+[error] 	at sun.net.NetworkClient.doConnect(NetworkClient.java:180)
+[error] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:432)
+[error] 	at sun.net.www.http.HttpClient.openServer(HttpClient.java:527)
+[error] 	at sun.net.www.protocol.https.HttpsClient.<init>(HttpsClient.java:264)
+[error] 	at sun.net.www.protocol.https.HttpsClient.New(HttpsClient.java:367)
+[error] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(AbstractDelegateHttpsURLConnection.java:191)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1138)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1022)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection$6.run(HttpURLConnection.java:1020)
+[error] 	at java.security.AccessController.doPrivileged(Native Method)
+[error] 	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1019)
+[error] 	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:177)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1546)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection.access$200(HttpURLConnection.java:91)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1466)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection$9.run(HttpURLConnection.java:1464)
+[error] 	at java.security.AccessController.doPrivileged(Native Method)
+[error] 	at java.security.AccessController.doPrivilegedWithCombiner(AccessController.java:782)
+[error] 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1463)
+[error] 	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
+[error] 	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:338)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheUrl$.rangeResOpt(CacheUrl.scala:185)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheUrl$.urlConnectionMaybePartial(CacheUrl.scala:296)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheUrl$.urlConnectionMaybePartial(CacheUrl.scala:277)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$33(FileCache.scala:394)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.$anonfun$downloading$1(FileCache.scala:1062)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.withUrlLock(CacheLocks.scala:91)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.helper$2(FileCache.scala:1062)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache$.coursier$cache$FileCache$$downloading(FileCache.scala:1095)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.doDownload$1(FileCache.scala:365)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$54(FileCache.scala:552)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.loop$1(CacheLocks.scala:53)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.CacheLocks$.withLockOr(CacheLocks.scala:76)
+[error] 	at lmcoursier.internal.shaded.coursier.cache.FileCache.$anonfun$download$32(FileCache.scala:553)
+[error] 	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:659)
+[error] 	at scala.util.Success.$anonfun$map$1(Try.scala:255)
+[error] 	at scala.util.Success.map(Try.scala:213)
+[error] 	at scala.concurrent.Future.$anonfun$map$1(Future.scala:292)
+[error] 	at scala.concurrent.impl.Promise.liftedTree1$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.Promise.$anonfun$transform$1(Promise.scala:33)
+[error] 	at scala.concurrent.impl.CallbackRunnable.run(Promise.scala:64)
+[error] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+[error] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+[error] 	at java.lang.Thread.run(Thread.java:745)
+[error] (ssExtractDependencies) lmcoursier.internal.shaded.coursier.error.FetchError$DownloadingArtifacts: Error fetching artifacts:
+[error] https://repo1.maven.org/maven2/com/crealytics/spark-excel_2.11/0.8.2/spark-excel_2.11-0.8.2.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/crealytics/spark-excel_2.11/0.8.2/spark-excel_2.11-0.8.2.jar
+[error] https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml/3.14/poi-ooxml-3.14.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.4.4/spark-catalyst_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-catalyst_2.11/2.4.4/spark-catalyst_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.5.3/json4s-scalap_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-scalap_2.11/3.5.3/json4s-scalap_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.4.4/spark-unsafe_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-unsafe_2.11/2.4.4/spark-unsafe_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.4.4/spark-launcher_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-launcher_2.11/2.4.4/spark-launcher_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.4.4/spark-sketch_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-sketch_2.11/2.4.4/spark-sketch_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.4.4/spark-kvstore_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-kvstore_2.11/2.4.4/spark-kvstore_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.8/scala-reflect-2.11.8.jar
+[error] https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/poi/poi-ooxml-schemas/3.14/poi-ooxml-schemas-3.14.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.5.3/json4s-ast_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-ast_2.11/3.5.3/json4s-ast_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.4.4/spark-tags_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-tags_2.11/2.4.4/spark-tags_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.5.3/json4s-core_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-core_2.11/3.5.3/json4s-core_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.9.3/chill_2.11-0.9.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/twitter/chill_2.11/0.9.3/chill_2.11-0.9.3.jar
+[error] https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.5.3/json4s-jackson_2.11-3.5.3.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/json4s/json4s-jackson_2.11/3.5.3/json4s-jackson_2.11-3.5.3.jar
+[error] https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.11/3.9.2/scala-logging_2.11-3.9.2.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/typesafe/scala-logging/scala-logging_2.11/3.9.2/scala-logging_2.11-3.9.2.jar
+[error] https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.4/spark-core_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-core_2.11/2.4.4/spark-core_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.4.4/spark-network-shuffle_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-shuffle_2.11/2.4.4/spark-network-shuffle_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.6/scala-xml_2.11-1.0.6.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.6/scala-xml_2.11-1.0.6.jar
+[error] https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.4.4/spark-network-common_2.11-2.4.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/spark/spark-network-common_2.11/2.4.4/spark-network-common_2.11-2.4.4.jar
+[error] https://repo1.maven.org/maven2/org/apache/poi/poi/3.14/poi-3.14.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/apache/poi/poi/3.14/poi-3.14.jar
+[error] https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/fasterxml/jackson/module/jackson-module-scala_2.11/2.6.7.1/jackson-module-scala_2.11-2.6.7.1.jar
+[error] https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/com/github/virtuald/curvesapi/1.03/curvesapi-1.03.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_2.11/1.0.4/scala-parser-combinators_2.11-1.0.4.jar
+[error] https://repo1.maven.org/maven2/jline/jline/2.12.1/jline-2.12.1.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/jline/jline/2.12.1/jline-2.12.1.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/modules/scala-xml_2.11/1.0.4/scala-xml_2.11-1.0.4.jar
+[error] https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.jar: download error: Caught java.net.UnknownHostException: repo1.maven.org (repo1.maven.org) while downloading https://repo1.maven.org/maven2/org/scala-lang/scala-compiler/2.11.8/scala-compiler-2.11.8.jar

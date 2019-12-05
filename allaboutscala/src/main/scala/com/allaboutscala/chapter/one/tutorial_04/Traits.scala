@@ -1,6 +1,6 @@
 package com.allaboutscala.chapter.one.tutorial_04
-
 object Traits extends App {
+
   //Scala Tutorial - Learn How To Create And Extend Trait In Scala
   //1. Create a trait which will define the methods for a data access layer
   println("Step 1: Create a trait which will define the methods for a data access layer")
